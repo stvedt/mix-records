@@ -1,0 +1,298 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*         COLOR CODES     
+
+		Blue 	- #00C7D7
+		Green 	- #03A154
+		Red 	- #D84636
+*/
+
+
+/*--------------- Page Layout -------------*/
+body{
+	background:#000 url(../images/bg-lights.png) no-repeat;
+	background-position:75% 15px;
+	padding:0px;
+	margin:0px;
+	font-family:sans-serif;
+}
+
+#wrapper{
+	width:960px;
+	margin:0 auto;
+}
+
+#logo{
+	position:relative;
+	padding:25px 0px;
+}
+
+#nav ul{
+	padding:0px;
+	margin:0px;
+	height:40px;
+}
+#nav li{
+	float:left;
+	display:inline-block;
+	list-style-type:none;
+	
+}
+
+#nav a:link, #nav a:visited{
+	color:#fff;
+	font-size:22px;
+	font-family:sans-serif;
+	font-weight:bold;
+	text-decoration:none;	
+	padding:10px 45px;
+}
+
+#nav a:link:first-child, #nav a:visited:first-child{
+	padding-left:0px;
+}
+
+#nav a:active, #nav a:hover{
+	color:#00C7D7;
+}
+
+#content{
+	width:100%;
+	position:relative;
+	z-index:2;
+}
+
+#footer{
+	width:960px;
+	margin:0px auto;
+	text-align:center;
+}
+
+
+#bottomGraphic{
+	width:100%;
+	margin:0px auto;
+	
+	
+}
+#bottomGraphic.cues{
+	height:780px;
+	background:url(../images/bottom-cues.jpg) no-repeat;
+	background-position:center;
+	overflow-x: visible;
+	margin-top:-80px;
+	z-index:-1;
+}
+#bottomGraphic.pads{
+	height:400px;
+	background:url(../images/bottom-pads.jpg) no-repeat;
+	background-position:center;
+	overflow-x: visible;
+	position:relative;
+	z-index:-1;
+}
+#bottomGraphic.controller{
+	height:667px;
+	background:url(../images/bottom-controller.jpg) no-repeat;
+	background-position:center;
+	margin-top:-230px;
+	z-index:-1;
+	display:block;
+}
+
+#bottomGraphic.audio{
+	height:600px;
+	background:url(../images/bottom-audio2.jpg) no-repeat;
+	background-position:center;
+	margin-top:-500px;
+	z-index:-1;
+	display:block;
+}
+img.floatRight{
+	float:right;
+	margin-left:20px;
+}
+
+img.floatLeft{
+	float:left;
+	margin-right:20px;
+}
+
+
+/*------------- Tag Styles for Content --------*/	
+h1,h2,h3,h4,h5{
+	font-family:"ronnia";
+	color:#fff;
+}
+
+h1{
+	font-size:48px;
+	font-weight:bold;
+	margin:10px 0px;
+}
+
+h2{
+	font-size:36px;
+	margin:15px 0px;
+}
+
+.blue{
+	color:#00C7D7;
+		
+}
+.red{
+	color:#D84636;
+	
+}
+.green{
+	color:#03A154;
+}
+
+p{
+	color:#fff;
+	line-height:150%;
+}
+
+p.caption{
+	
+	width:640px;
+	float:left;
+}
+
+h2.caption{
+	width:290px;
+	float:left;
+	text-align:center;
+	font-weight:bolder;
+	margin:10px 0px;
+	padding:35px 15px;
+}
+
+a:link,a:visited{
+	color:#fff;
+}
+a:hover,a:active{
+	color:#00C7D7;	
+}
+table{
+	color:#fff;
+	font-weight:bold;
+	font-family:sans-serif;
+}
+table td{
+	padding:5px;
+}
+
+
+
+/*------------- Tag Styles for Forms --------*/	
+
+form h3{
+	margin-bottom:5px;
+}
+
+
+input, textarea { 
+	padding: 9px;
+	border: solid 1px #E5E5E5;
+	outline: 0;
+	font: normal 13px/100% sans-serif;
+	width: 200px;
+	background: #FFFFFF url('bg_form.png') left top repeat-x;
+	background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #EEEEEE), to(#FFFFFF));
+	background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);
+	box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+	-moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+	-webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+	}
+
+textarea { 
+	width: 400px;
+	max-width: 400px;
+	height: 150px;
+	line-height: 150%;
+	}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus { 
+	border-color: #C9C9C9; 
+	-webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;
+	}
+
+input#submit {
+	width: auto;
+	padding: 9px 15px;
+	border: 0;
+	font-size: 14px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	cursor: pointer;
+	margin:15px 0px 0px 350px;
+	}
+	
+	
+	
+/*------------- Tag Styles for Homepage --------*/	
+
+	/*---------- NIVO -----------*/
+.theme-default #slider {
+	width:958px; /* Make sure your images are the same size */
+	height:300px; /* Make sure your images are the same size */
+	border:1px solid #000;
+	margin-top: 20px;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+}
+.theme-pascal.slider-wrapper,
+.theme-orman.slider-wrapper {
+    margin-top:150px;
+}
+
+	/*-------- Fader --------*/
+.artistHome{
+	height:360px;
+	width:310px;
+	position:relative;
+	float:left;
+	margin:15px 10px 0px 0px;
+	
+}
+
+.artistHome:last-child{
+	margin-right:0px;
+}
+.fader{
+	width:310px;
+	height:76px;
+	background:#CCCCCC;
+	position:absolute;
+	top:0px;
+	right:-250px;
+	background:url(../images/fader.png) no-repeat top left;
+	
+}
+
+
+.mixer{
+	overflow:hidden;
+	height:76px;
+	width:310px; 
+	position:absolute;
+	background:url(../images/mixer.png) no-repeat;
+	background-position:bottom;
+	bottom:0px;
+}
+.fader h2{
+	margin-left:65px;
+	margin-top:5px;
+}
+
+.left{
+	right:-50px;
+}
+
+.left h2 {
+	margin-left:45px;
+}

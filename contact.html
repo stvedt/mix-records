@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>mix - Electronic Music Label: Contact</title>
+<link href="css/mix.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://use.typekit.com/snd4bop.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<style type="text/css">
+{
+	color:#FF0000;
+}
+</style>
+<script type="text/javascript">
+$(document).ready(function() {
+   var href = $("#nav").find("a[href='"+window.location.pathname+"']").each(function(e){
+		$(this).addClass("red")
+		//add your own logic here if needed
+		});
+	console.log(href);
+});
+</script>
+</head>
+
+<body>
+<div id="wrapper">
+<!--#include virtual="ssi/header-nav.html" -->
+
+<div id="content">
+  <h1>Contact</h1>
+  <form id="form1" name="form1" method="post" action="mail.php">
+  <h3 class="blue">Name</h3>
+  
+    	<input type="text" name="name" id="name" />
+  
+  <h3 class="blue">E-mail</h3>
+	  	<input type="text" name="email" id="email" />
+  <h3 class="blue">Message</h3>
+  		<textarea name="message" cols="" rows="5"></textarea>
+        <br /><br />
+        <input id="submit"  name="submit" type="submit" value="Send" />
+  </form>
+</div>
+
+
+</div>
+<div id="bottomGraphic" class="audio"></div>
+</body>
+</html>
