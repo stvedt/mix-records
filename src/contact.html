@@ -25,15 +25,15 @@ $(document).ready(function() {
 
 <body>
 <div id="wrapper">
-<!--#include virtual="ssi/header-nav.html" -->
+include "includes/header-nav.html"
 
 <div id="content">
   <h1>Contact</h1>
   <form id="form1" name="form1" method="post" action="mail.php">
   <h3 class="blue">Name</h3>
-  
+
     	<input type="text" name="name" id="name" />
-  
+
   <h3 class="blue">E-mail</h3>
 	  	<input type="text" name="email" id="email" />
   <h3 class="blue">Message</h3>
@@ -46,5 +46,6 @@ $(document).ready(function() {
 
 </div>
 <div id="bottomGraphic" class="audio"></div>
+include "includes/footer.html"
 </body>
 </html>
