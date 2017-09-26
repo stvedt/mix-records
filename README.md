@@ -1,5 +1,5 @@
 # mix-records
-Mix record labels website for senior project
+Site is live at: https://mix-records.firebaseapp.com
 
 ## Setup
 To install Node Dependencies for Grunt:
