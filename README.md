@@ -1,26 +1,29 @@
 # mix-records
-Site is live at: https://mix-records.firebaseapp.com
+
+Site is live at: https://mix-records.surge.sh
 
 ## Setup
+
 To install Node Dependencies for Grunt:
 
 `npm install .`
 
 ## Build Static Files
+
 We are using Grunt Includes to pull in the header and footer for better maintainability.
 
 Run `grunt`
 
 ## Deploy
-````
+
+```bash
 grunt
-firebase deploy
-````
+surge
+```
 
 ## To Do's
-- Implement Grunt
-- Ditch server-side includes for grunt-includes
+
 - Use SASS
-- Deploy via firebase
 - Clean up JavaScripts
 - Simplify Styling
+- Responsivise (if that's a word)
